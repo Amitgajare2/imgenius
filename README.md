@@ -1,4 +1,4 @@
-
+![Image description](https://dl.dropbox.com/scl/fi/8cy4a1aoa4agrgahat6f5/banner.jpeg?rlkey=vl3n9ys0qbhfu3d5ogjx08rpz&st=05r6w1nr&dl=0)
 # IMGenius
 
 Welcome to **IMGenius** — your ultimate library for ChatGPT image generation prompts!  
