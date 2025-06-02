@@ -150,5 +150,5 @@ We welcome feedback and contributions!
 
 ## 📬 Contact
 
-Have feedback or questions? Reach out to us via \[your contact method].
+Have feedback or questions? Reach out to us via \[syntaxamit@proton.me].
 
