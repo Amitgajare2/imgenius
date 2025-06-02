@@ -1,0 +1,55 @@
+.upload-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 8px;
+  }
+  
+  .upload-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .upload-form input,
+  .upload-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .upload-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .upload-form button:hover {
+    background: #0056b3;
+  }
+  
+  .upload-form select {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .upload-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+  }
+  

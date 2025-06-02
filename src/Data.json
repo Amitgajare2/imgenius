@@ -1,0 +1,44 @@
+[
+  {
+    "category": "Poster",
+    "Img": "https://dl.dropbox.com/scl/fi/y66tsr5tqe467n1gqe71k/GsNJlV5XwAA39fS.jpg?rlkey=owa9tfnraw28ltcqbbo85i4pq&st=3kubbnrx&dl=0",
+    "Title": "Victorian Circus Poster Lithograph Style",
+    "Name": "@Artedeingenio",
+    "prompt": "Transform this image into a Victorian circus poster lithograph. Use bold flat colors (red, yellow, blue, green) with thick black outlines and dramatic shading. Pose characters in exaggerated theatrical stances, as if mid-performance. Surround them with decorative banners, ornate lettering, and vintage circus motifs: stars, rays, scrolls. Emulate aged paper texture with visible wear, creases, and ink imperfections. Typography should resemble 19th-century playbill styles. The overall look should evoke the spectacle and nostalgia of a classic carnival poster."
+  },
+  {
+    "category": "Letter",
+    "Img": "https://dl.dropbox.com/scl/fi/rydj51yozbfqdw8tqov9y/GsH19TdW0AAe46m.jpg?rlkey=u2utnnjhrnlq0zikckarssfkx&st=y7hmsu36&dl=0",
+    "Title": "Liquified chrome lettering",
+    "Name": "@gnrlyxyz",
+    "prompt": "Create a custom typographic illustration of the word [SUPER] in a vibrant, high-gloss script style that mimics glossy, liquified gel lettering. The letters should appear fluid and melting, with iridescent color transitions of teal, cyan, violet, and magenta. Add glowing highlights, star-like sparkles, and reflective light effects to enhance the chrome-like appearance. The text should have a dripping, gooey bottom edge as if the liquid is oozing down. No additional text or elements. Focus on stylized, fluid motion and a futuristic, glossy finish. Black background. Square aspect ratio."
+  },
+  {
+    "category": "other",
+    "Img": "https://dl.dropbox.com/scl/fi/y2hubsh1gsohv25kkn09a/jf.jpg?rlkey=9gd56g8r54wqv61kis18l7edk&st=0wz967so&dl=0",
+    "Title": "Hand Embroidery",
+    "Name": "@alban_gz",
+    "prompt": "Delicate hand embroidery illustration on linen fabric, showing [SUBJECT], soft earthy tones, visible threads and stitching texture, subtle shading, peaceful and minimalist countryside atmosphere, natural element included, finely detailed embroidery art, textile aesthetic"
+  },
+  {
+    "category": "sketch",
+    "Img": "https://dl.dropbox.com/scl/fi/g8pbk4hurngfrc64e87ju/Gr8buQ4WIAARSBj.jpg?rlkey=779egdu8b8d11ewy53cjy11t6&st=cgnv5z8s&dl=0",
+    "Title": "modernist architecture",
+    "Name": "@Artedeingenio",
+    "prompt": "a stylized line art drawing of the façade of Casa Batlló with flowing organic windows and curved balcony lines, white background, only one stained glass window in color, modernist architectural elegance with expressive motion --ar 58:77 --raw --p --v 7"
+  },
+  {
+    "category": "Painting",
+    "Img": "https://dl.dropbox.com/scl/fi/zf68h0ipvngms0hk5or21/Gr4LcpiXMAABWeD.jpg?rlkey=92i2tw5e291635lf0e5bus8ft&st=iqi5wfwf&dl=0",
+    "Title": "1980s Western Animation",
+    "Name": "@Artedeingenio",
+    "prompt": "Transform this image into a 1980s Saturday morning cartoon illustration in the style of He-Man, G.I. Joe, or Thundercats. Use bold black outlines, flat cel shading with exaggerated muscles or features, and a vivid, saturated color palette. Shadows should be blocky and simple. Characters should appear heroic, dramatic, or over-posed, with strong facial expressions and action-ready postures. The background should resemble a hand-painted matte painting, with fantastical or retro-futuristic scenery. Add light film grain or aging to match the era’s animation look."
+  },
+  {
+    "category": "Painting",
+    "Img": "https://dl.dropbox.com/scl/fi/vbk8jmj0rk5jmexcxkapt/Gr8pgctXoAA9s5T.jpg?rlkey=xjev08aywkhcykanldxglupco&st=qya7dfk0&dl=0",
+    "Title": "Theatrical shadow puppet scene",
+    "Name": "@azed_ai",
+    "prompt": "A theatrical shadow puppet scene of a [subject], shown in stark silhouette against a glowing parchment screen. The puppets are jointed and stylized, with hints of [color1] and [color2] light bleeding around the edges."
+  }
+]

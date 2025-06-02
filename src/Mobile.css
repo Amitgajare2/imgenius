@@ -1,0 +1,182 @@
+@media only screen and (max-width: 600px) {
+    .hero-section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .img-cover {
+        width: 100%;
+        height: 40%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.189), rgba(0, 0, 0, 0.966)), url('../public/assinatura-do-midjourney.png');
+    }
+
+    .hero-text {
+        width: 100%;
+        height: 60%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        top: 15px;
+        left: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    }
+
+    .category-section {
+        flex-direction: column;
+        margin-top: 10px;
+        user-select: none;
+    }
+
+    .category-section h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .categories {
+        gap: 15px;
+        font-size: 0.8rem;
+    }
+
+    .category:hover {
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+
+    .showcase {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        /* width: 100%; */
+        /* border: 1px solid rgb(255, 0, 0); */
+    }
+
+    .showcase h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .showcase p {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+
+    .card-gallery {
+        column-count: 3;
+        column-gap: 0.5rem;
+        padding: 0.6rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .btn-23 {
+        border-radius: 1px;
+        border-width: 2px;
+        overflow: hidden;
+        font-size: 12px;
+        padding: 0.4em 1.5em;
+        position: relative;
+    }
+
+    .faq-question {
+        font-size: 12px;
+    }
+
+    .faq-answer {
+        font-size: 11px;
+        font-family: "Exo 2", sans-serif;
+    }
+
+    .faq-title {
+        font-size: 1.3rem;
+    }
+
+    .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 0px;
+        height: max-content;
+    }
+
+
+    .footer-left {
+        width: 100%;
+    }
+
+    .footer-right {
+        width: 100%;
+        height: auto;
+        align-items: start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        font-size: 0.7rem;
+        padding-bottom: 0px;
+    }
+
+    .footer-links {
+        font-size: 0.7rem;
+    }
+
+    .popup-content {
+        gap: 1rem;
+        max-width: 700px;
+        width: 90%;
+        flex-direction: column;
+      }
+
+      .popup-img {
+        width: 50%;
+      }
+
+      .popup-details {
+        display: flex;
+        flex-direction: column;
+        padding: 10px ;
+        width: fit-content;
+        width: 100%;
+      }
+
+      .popup-details h2 {
+        margin: 0;
+        font-size: 1rem;
+        color: #fff;
+        padding-bottom: 5px;
+      }
+    
+      .popup-details p {
+        color: #ccc;
+        /* margin: 0.5rem 0; */
+        padding-bottom: 0px;
+        text-align: start;
+      }
+}
