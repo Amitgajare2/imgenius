@@ -2,7 +2,6 @@
 # IMGenius
 
 Welcome to **IMGenius** — your ultimate library for ChatGPT image generation prompts!  
-This platform makes AI image creation accessible, simple, and fun for everyone, whether you're a designer, artist, developer, content creator, or just curious about AI-generated art.
 
 ---
 
