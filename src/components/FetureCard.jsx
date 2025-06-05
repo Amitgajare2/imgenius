@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react'; // add useRef // <-- add useState
 import data from '../Data.json';
 import '../components/Card.css';
+import Card from './Card';
+
 
 function FeCard() {
   const textRef = useRef(null);
@@ -10,11 +12,10 @@ function FeCard() {
     <>
       <div className="card-gallery">
         {data.map((item, index) => (
-          <img
+          <Card
             key={index}
             src={item.Img}
             alt={item.Title}
-            className="card-image"
             onClick={() => setSelected(item)}
           />
         ))}
@@ -42,7 +43,7 @@ function FeCard() {
                       fallbackCopy();
                     }
                   }
-              
+
                   function fallbackCopy() {
                     textRef.current.select();
                     document.execCommand('copy');
