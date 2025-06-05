@@ -1,30 +1,31 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
-// import Footer from "../components/Footer";
 import { Client, Databases, Query } from "appwrite";
 import "./gallery.css";
+import Card from "../components/Card";
+
 
 /* ────────────────────────────────
    Appwrite setup
 ────────────────────────────────── */
 const client = new Client()
   .setEndpoint("https://fra.cloud.appwrite.io/v1")      // your endpoint
-  .setProject("Your project ID");                  // your project-ID
+  .setProject("683c4915002532910b14");                  // your project-ID
 
 const databases = new Databases(client);
-const DATABASE_ID   = "Your Database ID"; 
-const COLLECTION_ID = "Your Collection ID";
+const DATABASE_ID = "683c49540008e5f750c3";
+const COLLECTION_ID = "683c49680018535d89df";
 
 const IMAGES_PER_PAGE = 6;
 
 /* ────────────────────────────────
-   Page-level animation (mount / unmount)
+   Page-level animation
 ────────────────────────────────── */
 const pageVariants = {
   initial: { scale: 0.8, opacity: 0 },
   animate: { scale: 1, opacity: 1 },
-  exit:    { scale: 1.1, opacity: 0 },
+  exit: { scale: 1.1, opacity: 0 },
 };
 const transition = { duration: 0.4, ease: "easeInOut" };
 
@@ -40,14 +41,14 @@ const categories = [
    Component
 ────────────────────────────────── */
 export default function Gallery() {
-  const [images,   setImages]          = useState([]);
-  const [page,     setPage]            = useState(0);
-  const [hasMore,  setHasMore]         = useState(true);
-  const [loading,  setLoading]         = useState(false);
+  const [images, setImages] = useState([]);
+  const [page, setPage] = useState(0);
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
 
-  const [selected, setSelected]        = useState(null);
+  const [selected, setSelected] = useState(null);
   const [selectedCategory, setCategory] = useState("All");
-  const [searchTerm,       setSearch]   = useState("");
+  const [searchTerm, setSearch] = useState("");
 
   const textRef = useRef(null);           // for prompt copy
   const sentinel = useRef(null);          // IntersectionObserver target
@@ -157,15 +158,17 @@ export default function Gallery() {
       {/* ───────────────── Masonry grid ───────────────── */}
       <div className="masonry-gallery">
         {showImages.map((item, index) => (
-          <motion.img
+          <Card
             key={item.$id}
             src={item.imgUrl}
             alt={item.title}
-            className="gallery-img"
             onClick={() => setSelected(item)}
-            initial={{ opacity: 0, y: 25 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: index * 0.05 }}
+            animationProps={{
+              as: motion.img, 
+              initial: { opacity: 0, y: 25 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: 0.4, delay: index * 0.05 },
+            }}
           />
         ))}
       </div>
@@ -215,7 +218,6 @@ export default function Gallery() {
         </div>
       )}
 
-      {/* <Footer /> */}
     </motion.div>
   );
 }
