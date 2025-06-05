@@ -11,11 +11,11 @@ import Card from "../components/Card";
 ────────────────────────────────── */
 const client = new Client()
   .setEndpoint("https://fra.cloud.appwrite.io/v1")      // your endpoint
-  .setProject("683c4915002532910b14");                  // your project-ID
+  .setProject("");                  // your project-ID
 
 const databases = new Databases(client);
-const DATABASE_ID = "683c49540008e5f750c3";
-const COLLECTION_ID = "683c49680018535d89df";
+const DATABASE_ID = "";
+const COLLECTION_ID = "";
 
 const IMAGES_PER_PAGE = 6;
 
