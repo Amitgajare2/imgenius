@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { Client, Databases, Query } from "appwrite";
 import "./gallery.css";
 import Card from "../components/Card";
+import Popup from "../components/Popup";
 
 
 /* ────────────────────────────────
@@ -50,8 +51,8 @@ export default function Gallery() {
   const [selectedCategory, setCategory] = useState("All");
   const [searchTerm, setSearch] = useState("");
 
-  const textRef = useRef(null);           // for prompt copy
-  const sentinel = useRef(null);          // IntersectionObserver target
+  const sentinel = useRef(null);   
+
 
   /* ───── Fetch paged documents ───── */
   const fetchImages = useCallback(
@@ -83,11 +84,13 @@ export default function Gallery() {
     [],
   );
 
+
   /* ───── On first mount ───── */
   useEffect(() => {
     fetchImages(0);
   }, [fetchImages]);
 
+  
   /* ───── Infinite scroll via IntersectionObserver ───── */
   useEffect(() => {
     if (!hasMore) return;
@@ -181,42 +184,8 @@ export default function Gallery() {
       )}
 
       {/* ───────────────── Popup ───────────────── */}
-      {selected && (
-        <div className="popup-overlay" onClick={() => setSelected(null)}>
-          <div className="popup-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selected.imgUrl} alt={selected.title} className="popup-img" />
-            <div className="popup-details">
-              <small>Category: {selected.category}</small>
-              <h2>{selected.title}</h2>
-              <p><strong>Creator:</strong> {selected.name}</p>
-              <p><strong>Prompt:</strong></p>
-              <textarea ref={textRef} readOnly value={selected.prompt} />
-              <button
-                className="copy-btn"
-                onClick={() => {
-                  const txt = textRef.current;
-                  if (!txt) return;
-                  if (navigator.clipboard && window.isSecureContext) {
-                    navigator.clipboard
-                      .writeText(txt.value)
-                      .then(() => alert("Prompt copied to clipboard!"))
-                      .catch(() => fallbackCopy());
-                  } else {
-                    fallbackCopy();
-                  }
-                  function fallbackCopy() {
-                    txt.select();
-                    document.execCommand("copy");
-                    alert("Prompt copied to clipboard!");
-                  }
-                }}
-              >
-                Copy Text
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {selected && <Popup item={selected} onClose={() => setSelected(null)} />}
+
 
     </motion.div>
   );
