@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./Popup.css";
-import "../Mobile.css"
+// import "../Mobile.css"
 
 function Popup({ item, onClose }) {
   const textRef = useRef(null);
